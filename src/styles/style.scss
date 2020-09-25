@@ -1,0 +1,26 @@
+@import '~normalize.css';
+$pinkColor: rgb(224, 98, 221);
+
+body {
+  padding: 100px;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  text-align: center;
+  color: aqua;
+  border: 2px solid aqua;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 0 10px 40px rgba(66,194,186, 0.7);
+  padding: 10px;
+  &:hover {
+    box-shadow: 0 0 10px 40px $pinkColor;
+    border: 2px solid $pinkColor;
+    color: $pinkColor;
+    transition: 1s;
+  }
+}
